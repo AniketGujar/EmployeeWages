@@ -1,1 +1,1 @@
-# EmployeeWages
+# Employee Wage Computation Problem
