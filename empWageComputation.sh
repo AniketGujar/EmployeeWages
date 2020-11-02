@@ -4,6 +4,7 @@ DailyWage=160
 HalfDayWage=80
 TotalWage=0
 HourlyWage=20
+
 Attendance()
 {
         attend=$((RANDOM%7))
