@@ -7,6 +7,7 @@ HourlyWage=20
 
 for (( i=1; i<=20; i++ ))
 do
+
 Attendance=$((RANDOM%7))
 
 	case $Attendance in
