@@ -1,10 +1,13 @@
 #!/bin/bash
 
+DayWage=160
+NoWage=0
+
 attendance=$((RANDOM%2))
 
-if (( $attendance -eq 1 ))
+if (( $attendance == 1 ))
 then
-        echo "Employee is Present"
+	echo "Daily Wage= $DayWage"
 else
-        echo "Employee is Absent"
+        echo "Daily Wage= $NoWage "
 fi
