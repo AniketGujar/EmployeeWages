@@ -1,10 +1,18 @@
 #!/bin/bash
 
-attendance=$((RANDOM%2))
+DailyWage=160
+HalfDayWage=80
+TotalWage=0
+HourlyWage=20
 
-if (( $attendance -eq 1 ))
+attendance=$((RANDOM%7))
+
+if [[ $attendance -eq 1 ]]
 then
-        echo "Employee is Present"
+	echo "Employee is Present"
+elif [[ $attendance -eq 6 ]]
+then
+	echo "OverTime"
 else
         echo "Employee is Absent"
 fi
