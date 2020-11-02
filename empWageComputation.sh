@@ -4,15 +4,16 @@ DailyWage=160
 HalfDayWage=80
 TotalWage=0
 HourlyWage=20
+Attendance=$((RANDOM%7))
 
-attendance=$((RANDOM%7))
+	case $Attendance in
+	0)      echo "Absente" ;;
 
-if [[ $attendance -eq 1 ]]
-then
-	echo "Employee is Present"
-elif [[ $attendance -eq 6 ]]
-then
-	echo "OverTime"
-else
-        echo "Employee is Absent"
-fi
+	6)	echo "HalfDay" ;;
+
+
+	5)	echo "Overtime" ;;
+
+	*)      echo "Present" ;;
+        esac
+
