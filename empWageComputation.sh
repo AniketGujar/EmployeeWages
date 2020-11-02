@@ -36,6 +36,7 @@ Attendance=$((RANDOM%7))
 	*)      Present=$(($Present+1))
                 TotalWage=$(($TotalWage+$DailyWage))
                 echo "Day $i    $DailyWage      $TotalWage" ;;
+
         esac
 
 echo "Present $Present"
